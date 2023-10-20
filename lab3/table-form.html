@@ -13,15 +13,23 @@
         <ul>
           <li><a href="index.html">home</a></li>
           <li><a href="about.html">about</a></li>
-          <!-- <li><a href="lab2/wiki.html">lab 2</a></li> -->
-          <!-- <li><a href="game.html">game</a></li> -->
           <li><a href="mailto: qutr3093@colorado.edu">contact</a></li>
-          <!-- <li><a href="content.html">listen</a></li> -->
+
+          <li>
+            <a href="#tracks">tracks</a>
+            <span aria-hidden="”true”" class="material-icons">accessible</span>
+          </li>
+          <li>
+            <a href="#form">form</a>
+            <span aria-hidden="”true”" class="material-icons"
+              >accessibility</span
+            >
+          </li>
         </ul>
       </nav>
 
-      <header><h1>Top Tracks This Month</h1></header>
-      <section>
+      <section id="tracks">
+        <header><h1>Top Tracks This Month</h1></header>
         <!-- <h2>accessible table data</h2> -->
         <table>
           <caption>
@@ -106,7 +114,7 @@
         </table>
       </section>
 
-      <section>
+      <section id="form">
         <form id="myform" method="post">
           <fieldset>
             <legend>Give us your information!</legend>
@@ -118,7 +126,7 @@
 
             <label for="email">
               what is your email?
-              <input type="email" id="email" />
+              <input type="email" id="email" required />
             </label>
 
             <label for="website">

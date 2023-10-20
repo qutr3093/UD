@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat&display=swap');
-/* 
-font-family: 'Lora', serif;
-font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+.skip-link {
+  background: black;
+  color: #fff;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(-100%);
+}
+
+.skip-link {
+  /* Same as  before */
+  transition: transform 0.3s;
+}
 
 body{
   background-color: whitesmoke;
@@ -106,7 +123,7 @@ label{
 /*will target any field that is not submit and is valid*/
 input:not([type="submit"]):valid {
     border-color: #4A6D51;
-    box-shadow: 0 0 3px #4A6D51;
+    box-shadow: 0 0 2px #4A6D51;
   }
   
 /* Hide and show list of inputRequirements when interacting with input */
