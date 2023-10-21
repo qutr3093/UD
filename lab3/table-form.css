@@ -45,7 +45,7 @@ nav ul {
 nav a {
   color: #333333;
   text-decoration: none;
-  padding: .5em 1em;
+  padding: .5em .5em;
   }
   
 nav a:hover {
