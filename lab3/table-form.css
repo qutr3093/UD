@@ -5,14 +5,14 @@
 .skip-link {
   background: black;
   color: #fff;
-  font-weight: 700;
-  padding: 4px;
+  font-size: 700;
+  padding: 10px;
   position: absolute;
   transform: translateY(-200%);
 }
 
 .skip-link:focus {
-  transform: translateY(-100%);
+  transform: translateY(20%);
 }
 
 .skip-link {
