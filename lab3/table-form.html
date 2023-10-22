@@ -10,11 +10,21 @@
   <body>
     <a class="skip-link" href="#maincontent">Skip to main content</a>
     <div class="container">
+      <header><h1>Music Wrap</h1></header>
       <nav>
+        <h2 class="sr-only">Main Navigation</h2>
         <ul>
+          <li>
+            <a href="#description">about us</a>
+            <span aria-hidden="”true”" class="material-icons">person</span>
+          </li>
           <li>
             <a href="#maincontent">tracks</a>
             <span aria-hidden="”true”" class="material-icons">favorite</span>
+          </li>
+          <li>
+            <a href="#recomendations">recommendations</a>
+            <span aria-hidden="”true”" class="material-icons">recommend</span>
           </li>
           <li>
             <a href="#form">form</a>
@@ -23,9 +33,29 @@
         </ul>
       </nav>
 
+      <section id="description">
+        <h2>About Us</h2>
+        <p>
+          We're dedicated to revolutionizing your music discovery experience. We
+          believe music should be deeply personal, which is why our cutting-edge
+          AI powers our Top 10 Songs Generator. This tool tailors monthly
+          playlists based on your unique tastes, taking into account your
+          favorite genres, artists, and mood preferences. Our commitment to
+          freshness ensures that you're always in tune with the latest music
+          trends. What makes us exceptional is our blend of technology and human
+          passion. Our team of music enthusiasts collaborates with our AI to
+          deliver recommendations with a personal touch. Beyond our Top 10
+          generator, we offer a song recommendation feature for every occasion
+          and mood. Let our AI be your personal DJ, providing the perfect
+          soundtrack for your moments. Join us at for a more engaging,
+          enriching, and personal connection to the world of music. Explore,
+          connect, and be inspired through AI-driven music curation.
+        </p>
+      </section>
+
       <section id="maincontent">
-        <header><h1>Top Tracks This Month</h1></header>
-        <!-- <h2>accessible table data</h2> -->
+        <h2>Top Tracks This Month</h2>
+        <!-- <header><h1>Top Tracks This Month</h1></header> -->
         <table>
           <caption>
             Only visible to you
@@ -109,10 +139,60 @@
         </table>
       </section>
 
+      <section id="recommendations">
+        <h2>Songs recommendations</h2>
+        <table>
+          <caption>
+            Based on your taste!
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Title</th>
+              <th scope="col">Artist</th>
+              <th scope="col">Album</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>dirty dancer</td>
+              <td>Orion Sun</td>
+              <td>dirty dancer</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Let Me Go</td>
+              <td>Daniel Caesar</td>
+              <td>NEVER ENOUGH</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ice Slippin</td>
+              <td>Omar Apollo</td>
+              <td>Live For Me</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Useless</td>
+              <td>Omar Apollo</td>
+              <td>Apolonio</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>2AM</td>
+              <td>SZA</td>
+              <td>Ctrl</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
       <section id="form">
+        <h2>Sign Up Form</h2>
         <form id="myform" method="post">
           <fieldset>
-            <legend>Give us your information!</legend>
+            <legend>Subscribe to our newsletter!</legend>
 
             <label for="username">
               what is your name?

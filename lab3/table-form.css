@@ -97,9 +97,6 @@ th {
     color: white;
   }
 
-form {
-    padding: 30px;
-}
 input:focus {
     background: black;
     color: white;
