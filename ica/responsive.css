@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* "* is everything", universal selector */
+/* snippet is a CSS reset that removes default padding and margin, 
+and sets the box-sizing model to "border-box" for all elements */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #F4F7F5;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4A6D51;
+    font-weight: bold;
+    }
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  font-weight: normal;
+  padding: .2em 0;
+}
+
+p {
+  margin: 1.8em 0;
+  line-height: 1.8em;
+
+}
+
+h2 {
+    font-size:1.25em;
+}
+
+header, nav, main, aside, footer {
+  padding: 1.5em;
+  border: 1px #4A6D51 solid;
+}
+
+header, footer {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns:
+   1fr       2fr       1fr;
+  grid-template-areas:
+  "header1   header1   header1"
+  "nav1      nav1      nav1"
+  "aside1    main1     aside2"
+  "aside1    main1     aside2"
+  "aside1    main1     aside2"
+  "footer1   footer1   footer1";
+}
+
+header {
+    grid-area: header1; background:#aac7ab;
+}
+
+nav {
+    grid-area: nav1; background:rgb(224, 234, 221);
+}
+
+main {
+    grid-area: main1; background: rgb(240, 234, 182); max-height: 100%;
+}
+
+#aside1 {
+    grid-area: aside1; background: rgb(241, 202, 174);
+}
+
+#aside2 {
+    grid-area: aside2; background: rgb(191, 226, 246);
+}
+
+footer {
+    grid-area: footer1; background: rgb(171, 171, 171);
+}
+
+nav ul {
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none
+}
+
+@media screen
+  and (min-width: 641px)
+  and (max-width: 900px)  {
+.container {
+grid-template-columns:
+   1fr 1fr;
+grid-template-areas:
+  "header1  header1"
+  "nav1     nav1"
+  "main1    main1"
+  "aside1   aside2"
+  "footer1  footer1";
+}
+}
+
+@media screen
+  and (max-width: 640px)  {
+.container {
+grid-template-columns:
+   1fr;
+grid-template-areas:
+  "header1"
+  "main1"
+  "aside1"
+  "aside2"
+  "nav1"
+  "footer1";
+}
+nav ul {
+  flex-flow: column nowrap;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  padding: 10px 5px;
+  margin: 5px;
+  border: 1px black solid;
+  background: white;
+
+}
+}
