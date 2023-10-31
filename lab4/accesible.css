@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+.skip-link {
+  background: black;
+  color: #fff;
+  font-size: 700;
+  padding: 10px;
+  position: absolute;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(20%);
+}
+
+.skip-link {
+  /* Same as  before */
+  transition: transform 0.3s;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 16px;
+  }
+  
+  nav {
+    padding: 1em;
+    /* position: sticky; */
+    top:0;
+    background-color: #F4F7F5;
+    }
+    
+  nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+    }
+    
+  nav a {
+    color: #333333;
+    text-decoration: none;
+    padding: .5em .5em;
+    }
+    
+  nav a:hover {
+    color: #4A6D51;
+    font-weight: bold;
+    }
+  
+  a {
+    color: black;
+  }
+  a:hover {
+      color: #4A6D51;
+      font-weight: bold;
+      }
+  .container{
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+  }
+
+  /* .container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main main"
+        "nav aside1 aside2"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+  } */
