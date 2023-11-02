@@ -147,8 +147,8 @@ footer{
         1fr;
     grid-template-areas:
       "header1"
-      "main1"
       "aside1"
+      "main1"
       "aside2"
       "nav1"
       "footer1";
