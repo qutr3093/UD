@@ -84,7 +84,7 @@ h1, h2, h3, h4 {
         "header1 header1 header1"
         "main1 main1 aside1"
         "main1 main1 aside2"
-        "nav1 nav1 nav1"
+        "nav1 nav1 aside3"
         "footer1 footer1 footer1";
     grid-template-columns: 1fr 2fr 1.5fr;
     grid-template-rows: auto auto auto auto;
@@ -139,18 +139,43 @@ footer{
 
 }
 
+
+main {
+  grid-area: main1;
+}
+
+#aside1{
+  grid-area: aside1;
+  padding-bottom: 0px;
+}
+
+#aside2{
+  grid-area: aside2;
+}
+
+#aside3{
+  grid-area: aside3;
+}
+
+footer{
+  grid-area: footer1;
+}
+
 @media screen
   and (max-width: 640px){
 
+    
   .container {
     grid-template-columns:
         1fr;
     grid-template-areas:
       "header1"
-      "aside1"
       "main1"
+      "aside1"
       "aside2"
+      "aside3"
       "nav1"
       "footer1";
     }
+
   }
